@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexGen - Premium Web Application</title>
+    <meta name="description" content="A modern, premium web application built for the future.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader-wrapper">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <header id="header" class="header">
+        <nav class="navbar container">
+            <a href="#" class="logo">Nex<span>Gen</span></a>
+            
+            <ul class="nav-links">
+                <div class="nav-indicator-slide"></div>
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button id="themeToggle" class="theme-btn" aria-label="Toggle Dark/Light Mode">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
+            <div id="particles-js" class="particles"></div>
+            <div class="container hero-content">
+                <h1 class="hero-title reveal">Future of <span class="gradient-text typing-text"></span></h1>
+                <p class="hero-subtitle reveal delay-1">Experience a premium, glassmorphism-inspired UI designed for modern web applications. Fast, responsive, and beautifully animated.</p>
+                <div class="hero-buttons reveal delay-2">
+                    <a href="#features" class="btn btn-primary">Get Started</a>
+                    <a href="#portfolio" class="btn btn-outline">View Work</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>About Us</h2>
+                    <p>We build digital experiences that matter.</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text reveal delay-1">
+                        <h3>Empowering your digital journey.</h3>
+                        <p>Our goal is to provide top-tier, scalable solutions using modern technologies. We focus on seamless user experiences, cutting-edge designs, and robust performance to ensure your web presence stands out.</p>
+                    </div>
+                    <div class="stats-grid reveal delay-2">
+                        <div class="stat-card glass">
+                            <h4 class="counter" data-target="150">0</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat-card glass">
+                            <h4 class="counter" data-target="99">0</h4>
+                            <p>Client Satisfaction (%)</p>
+                        </div>
+                        <div class="stat-card glass">
+                            <h4 class="counter" data-target="24">0</h4>
+                            <p>Awards Won</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features section bg-alt">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Key Features</h2>
+                    <p>Everything you need, built right in.</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card glass reveal">
+                        <i class="fas fa-bolt feature-icon"></i>
+                        <h3>Lightning Fast</h3>
+                        <p>Optimized code and assets ensure your site loads instantly.</p>
+                    </div>
+                    <div class="feature-card glass reveal delay-1">
+                        <i class="fas fa-mobile-alt feature-icon"></i>
+                        <h3>Fully Responsive</h3>
+                        <p>Looks and works flawlessly across all devices and screen sizes.</p>
+                    </div>
+                    <div class="feature-card glass reveal delay-2">
+                        <i class="fas fa-layer-group feature-icon"></i>
+                        <h3>Glassmorphism UI</h3>
+                        <p>Modern design language featuring beautiful blur and depth effects.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Our Portfolio</h2>
+                    <p>Explore our recent masterpieces.</p>
+                </div>
+                <div class="portfolio-filters reveal">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web App</button>
+                    <button class="filter-btn" data-filter="design">UI/UX</button>
+                </div>
+                <div class="portfolio-grid reveal delay-1">
+                    <div class="portfolio-item web">
+                        <!-- Using unsplash source for placeholder image -->
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" alt="Web App Project" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Analytics Dashboard</h3>
+                            <p>Web App</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item design">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80" alt="Design Project" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>Brand Identity</h3>
+                            <p>UI/UX</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item web">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="Web App Project" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Web App</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section bg-alt">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Get in Touch</h2>
+                    <p>Let's build something amazing together.</p>
+                </div>
+                <div class="contact-wrapper glass reveal delay-1">
+                    <form id="contactForm" class="contact-form">
+                        <div class="input-group">
+                            <input type="text" id="name" required placeholder=" ">
+                            <label for="name">Full Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="email" required placeholder=" ">
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="message" rows="5" required placeholder=" "></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#" class="logo">Nex<span>Gen</span></a>
+                <p>Crafting premium digital experiences through modern code and design.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Newsletter</h4>
+                <p>Subscribe for the latest updates.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Email Address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 NexGen. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
